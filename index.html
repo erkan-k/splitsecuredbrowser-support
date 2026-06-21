@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SplitSecuredBrowser — Secure Split-Screen Browser for iPhone, iPad &amp; Mac</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #0e0e10;
+    color: #f0f0f0;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #2a2a2e;
+    margin-bottom: 48px;
+  }
+  .icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #1A6FD4, #0A4FA8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 32px;
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+  }
+  .tagline {
+    color: #aaa;
+    font-size: 17px;
+    max-width: 480px;
+    margin: 0 auto 28px;
+  }
+  .badges {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #18181b;
+    border: 1px solid #2a2a2e;
+    color: #ccc;
+  }
+
+  /* Features */
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 48px 0 20px;
+    border-left: 3px solid #1A6FD4;
+    padding-left: 12px;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  @media (max-width: 600px) {
+    .features { grid-template-columns: 1fr; }
+  }
+  .feature-card {
+    background: #18181b;
+    border: 1px solid #2a2a2e;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .feature-icon { font-size: 22px; margin-bottom: 10px; }
+  .feature-title {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  .feature-desc {
+    color: #999;
+    font-size: 13.5px;
+  }
+
+  p { color: #d0d0d0; margin-bottom: 14px; font-size: 15px; }
+
+  .faq-item {
+    background: #18181b;
+    border: 1px solid #2a2a2e;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+  }
+  .faq-q { font-weight: 600; margin-bottom: 6px; font-size: 15px; }
+  .faq-a { color: #aaa; font-size: 14px; margin: 0; }
+
+  .cta-box {
+    background: linear-gradient(135deg, #1A6FD422, #0A4FA822);
+    border: 1px solid #1A6FD455;
+    border-radius: 14px;
+    padding: 32px;
+    text-align: center;
+    margin: 48px 0;
+  }
+  .cta-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .cta-box p {
+    color: #bbb;
+    margin-bottom: 0;
+  }
+
+  .contact-box {
+    background: #18181b;
+    border: 1px solid #2a2a2e;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 16px;
+  }
+  a { color: #4a9eff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid #2a2a2e;
+    color: #666;
+    font-size: 13px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HERO / MARKETING -->
+  <div class="hero">
+    <div class="icon">🔒</div>
+    <h1>SplitSecuredBrowser</h1>
+    <p class="tagline">The secure split-screen browser with no tracking. Resize tabs, control audio independently, and multitask like never before — on iPhone, iPad, and Mac.</p>
+    <div class="badges">
+      <span class="badge">📱 iPhone</span>
+      <span class="badge">⬛ iPad</span>
+      <span class="badge">💻 Mac</span>
+      <span class="badge">🔒 No Tracking</span>
+      <span class="badge">🆔 Face ID</span>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <h2>Why SplitSecuredBrowser</h2>
+  <div class="features">
+    <div class="feature-card">
+      <div class="feature-icon">🪟</div>
+      <div class="feature-title">Resizable Split View</div>
+      <div class="feature-desc">Drag to adjust two browser panels exactly how you want, on any device.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔊</div>
+      <div class="feature-title">Per-Tab Audio Control</div>
+      <div class="feature-desc">Mute or unmute each tab independently — no more guessing which tab is making noise.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎬</div>
+      <div class="feature-title">Video Fit Mode</div>
+      <div class="feature-desc">Expand any video to fill its panel without breaking your split-screen layout.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💾</div>
+      <div class="feature-title">Workspaces</div>
+      <div class="feature-desc">Save your tab groups and restore them instantly. Enable Auto-Save to never lose a session.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🆔</div>
+      <div class="feature-title">Face ID Protection</div>
+      <div class="feature-desc">Lock the app with Face ID or Touch ID to keep your browsing private.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🚫</div>
+      <div class="feature-title">No Tracking, No Ads</div>
+      <div class="feature-desc">We don't collect your data. Your browsing activity stays yours, always.</div>
+    </div>
+  </div>
+
+  <div class="cta-box">
+    <h3>Browse smarter. Browse securely.</h3>
+    <p>Available now on the App Store for iPhone, iPad, and Mac.</p>
+  </div>
+
+  <!-- SUPPORT -->
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <p class="faq-q">How do I resize the split view?</p>
+    <p class="faq-a">Drag the small handle between the two panels. On iPhone, tap and hold the gray bar between tabs, then slide to adjust the size.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Why can't I mute YouTube or TikTok?</p>
+    <p class="faq-a">Some major platforms use native media players that can override volume controls on iOS. Our mute button works reliably on most sites, but a small number of platforms may behave differently due to system-level restrictions.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">How do Workspaces work?</p>
+    <p class="faq-a">Workspaces let you save your current tabs and split layout, then restore them anytime. Enable Auto-Save in the Workspaces menu to automatically keep your session updated.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Is my data tracked or collected?</p>
+    <p class="faq-a">No. SplitSecuredBrowser does not collect, track, or sell any user data. Your browsing activity stays on your device.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">How do I enable Face ID lock?</p>
+    <p class="faq-a">Open the menu (grid icon in the tab bar) → Settings → toggle "Lock with Face ID." The app will require Face ID or your device passcode whenever it's reopened.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Does it work on Mac?</p>
+    <p class="faq-a">Yes. SplitSecuredBrowser runs natively on iPhone, iPad, and Mac with platform-optimized layouts for each device.</p>
+  </div>
+
+  <h2>Need More Help?</h2>
+  <div class="contact-box">
+    <p>If your question isn't answered above, reach out and we'll get back to you as soon as possible.</p>
+    <p><strong>Email:</strong> <a href="mailto:lethe_vat@hotmail.com">lethe_vat@hotmail.com</a></p>
+  </div>
+
+  <div class="footer">
+    © 2026 SplitSecuredBrowser. All rights reserved.
+  </div>
+
+</div>
+</body>
+</html>
